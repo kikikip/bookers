@@ -6,7 +6,13 @@
   <span><%= book.title %></span>
   <span><%= book.body %></span>
   <span>
-    <%= link_to "show", "/books/#{book.id}" %>
+    <%= link_to "Show", "/books/#{book.id}" %>
+  </span>
+  <span>
+    <%= link_to "Edit", edit_book_path(book.id) %>
+  </span>
+  <span>
+    <%= link_to "Destroy", "/books/#{book.id}" %>
   </span>
 <br>
 <% end %>
